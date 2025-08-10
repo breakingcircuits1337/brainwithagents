@@ -1,0 +1,271 @@
+{
+  "id": "test_brain",
+  "config": {
+    "max_processing_cycles": 1000,
+    "signal_decay_rate": 0.95,
+    "learning_threshold": 0.7,
+    "optimization_interval": 100,
+    "max_agents": 50,
+    "default_agent_threshold": 0.5
+  },
+  "metrics": {
+    "processing_cycles": 0,
+    "total_signals_processed": 1,
+    "average_processing_time": 0.03188753128051758,
+    "success_rate": 1.0,
+    "network_efficiency": 1.0,
+    "learning_rate": 0.0,
+    "adaptation_score": 0.0,
+    "resource_usage": {},
+    "agent_performance": {},
+    "system_health": 1.0
+  },
+  "processing_history": [
+    {
+      "timestamp": 1754589125.9296534,
+      "result": {
+        "success": true,
+        "signal_id": "data_1754589125",
+        "central_processing": {
+          "success": true,
+          "goal": "Goal(id='goal_1754589125', description=\"Integrate and coordinate multiple AI systems to achieve complex goals | Process input: {'content': {'test': 'data'}, 'type': 'test', 'timestamp': 1754589125.8977635}\", priority=<TaskPriority.HIGH: 3>, constraints=['Ensure system safety and reliability'], success_criteria=['All ethical guidelines must be followed', 'Core mission must be advanced', 'Actions must align with fundamental objectives'])",
+          "plan": "Plan(id='plan_1754589125', description=\"Strategic plan for: Integrate and coordinate multiple AI systems to achieve complex goals | Process input: {'content': {'test': 'data'}, 'type': 'test', 'timestamp': 1754589125.8977635}\", goals=[Goal(id='goal_1754589125', description=\"Integrate and coordinate multiple AI systems to achieve complex goals | Process input: {'content': {'test': 'data'}, 'type': 'test', 'timestamp': 1754589125.8977635}\", priority=<TaskPriority.HIGH: 3>, constraints=['Ensure system safety and reliability'], success_criteria=['All ethical guidelines must be followed', 'Core mission must be advanced', 'Actions must align with fundamental objectives'])], phases=[{'id': 'phase_1', 'name': 'Analysis', 'duration': 'short', 'focus': 'understanding requirements', 'tasks': ['Gather requirements', 'Assess environmental conditions', 'Identify constraints'], 'dependencies': []}, {'id': 'phase_2', 'name': 'Preparation', 'duration': 'medium', 'focus': 'resource allocation', 'tasks': ['Allocate resources', 'Prepare tools and systems', 'Establish monitoring protocols'], 'dependencies': ['phase_1']}, {'id': 'phase_3', 'name': 'Execution', 'duration': 'long', 'focus': 'main task completion', 'tasks': ['Execute main tasks', 'Monitor progress', 'Handle deviations'], 'dependencies': ['phase_2']}, {'id': 'phase_4', 'name': 'Review', 'duration': 'short', 'focus': 'evaluation and refinement', 'tasks': ['Evaluate outcomes', 'Document lessons learned', 'Prepare reports'], 'dependencies': ['phase_3']}], resource_requirements={'computational': 'high', 'memory': 'high', 'time': 'medium', 'specialized_tools': []}, contingency_plans=[{'trigger': 'Resource shortage', 'action': 'Reallocate resources or request additional resources', 'priority': 'high'}, {'trigger': 'Environmental disruption', 'action': 'Pause execution and reassess plan', 'priority': 'high'}, {'trigger': 'Task failure', 'action': 'Retry with alternative approach', 'priority': 'medium'}])",
+          "tasks": [
+            "Task(id='task_phase_1_1', description='Gather requirements', priority=<TaskPriority.MEDIUM: 2>, parameters={'description': 'Gather requirements', 'real_time_context': {}, 'retry_count': 0, 'max_retries': 3}, deadline=1754589575.8978894, dependencies=[])",
+            "Task(id='task_phase_1_2', description='Assess environmental conditions', priority=<TaskPriority.HIGH: 3>, parameters={'description': 'Assess environmental conditions', 'real_time_context': {}, 'retry_count': 0, 'max_retries': 3}, deadline=1754589575.8978975, dependencies=['task_phase_1_1'])",
+            "Task(id='task_phase_1_3', description='Identify constraints', priority=<TaskPriority.MEDIUM: 2>, parameters={'description': 'Identify constraints', 'real_time_context': {}, 'retry_count': 0, 'max_retries': 3}, deadline=1754589575.897902, dependencies=['task_phase_1_2'])"
+          ],
+          "results": [
+            "ExecutionResult(task_id='task_phase_1_1', success=True, result={'status': 'completed', 'output': 'Generic task executed: Gather requirements', 'timestamp': 1754589125.8980136}, execution_time=3.337860107421875e-06, error_message=None)",
+            "ExecutionResult(task_id='task_phase_1_2', success=True, result={'status': 'completed', 'output': 'Generic task executed: Assess environmental conditions', 'timestamp': 1754589125.898059}, execution_time=1.9073486328125e-06, error_message=None)",
+            "ExecutionResult(task_id='task_phase_1_3', success=True, result={'status': 'completed', 'output': 'Generic task executed: Identify constraints', 'timestamp': 1754589125.8980873}, execution_time=1.430511474609375e-06, error_message=None)"
+          ],
+          "summary": {
+            "total_tasks": 3,
+            "successful_tasks": 3,
+            "failed_tasks": 0,
+            "success_rate": 1.0,
+            "total_execution_time": 6.67572021484375e-06,
+            "average_execution_time": 2.2252400716145835e-06
+          }
+        },
+        "agent_results": [
+          {
+            "agent_id": "coordinator",
+            "specialization": "GeneralProcessor",
+            "result": {
+              "success": true,
+              "goal": "Goal(id='goal_1754589125', description='Establish core mission first', priority=<TaskPriority.HIGH: 3>, constraints=[], success_criteria=['All ethical guidelines must be followed', 'Core mission must be advanced', 'Actions must align with fundamental objectives'])",
+              "plan": "Plan(id='plan_1754589125', description='Strategic plan for: Establish core mission first', goals=[Goal(id='goal_1754589125', description='Establish core mission first', priority=<TaskPriority.HIGH: 3>, constraints=[], success_criteria=['All ethical guidelines must be followed', 'Core mission must be advanced', 'Actions must align with fundamental objectives'])], phases=[{'id': 'phase_1', 'name': 'Analysis', 'duration': 'short', 'focus': 'understanding requirements', 'tasks': ['Gather requirements', 'Assess environmental conditions', 'Identify constraints'], 'dependencies': []}, {'id': 'phase_2', 'name': 'Preparation', 'duration': 'medium', 'focus': 'resource allocation', 'tasks': ['Allocate resources', 'Prepare tools and systems', 'Establish monitoring protocols'], 'dependencies': ['phase_1']}, {'id': 'phase_3', 'name': 'Execution', 'duration': 'long', 'focus': 'main task completion', 'tasks': ['Execute main tasks', 'Monitor progress', 'Handle deviations'], 'dependencies': ['phase_2']}, {'id': 'phase_4', 'name': 'Review', 'duration': 'short', 'focus': 'evaluation and refinement', 'tasks': ['Evaluate outcomes', 'Document lessons learned', 'Prepare reports'], 'dependencies': ['phase_3']}], resource_requirements={'computational': 'high', 'memory': 'high', 'time': 'medium', 'specialized_tools': []}, contingency_plans=[{'trigger': 'Resource shortage', 'action': 'Reallocate resources or request additional resources', 'priority': 'high'}, {'trigger': 'Environmental disruption', 'action': 'Pause execution and reassess plan', 'priority': 'high'}, {'trigger': 'Task failure', 'action': 'Retry with alternative approach', 'priority': 'medium'}])",
+              "tasks": [
+                "Task(id='task_phase_1_1', description='Gather requirements', priority=<TaskPriority.MEDIUM: 2>, parameters={'description': 'Gather requirements', 'real_time_context': {}, 'retry_count': 0, 'max_retries': 3}, deadline=1754589575.8982172, dependencies=[])",
+                "Task(id='task_phase_1_2', description='Assess environmental conditions', priority=<TaskPriority.HIGH: 3>, parameters={'description': 'Assess environmental conditions', 'real_time_context': {}, 'retry_count': 0, 'max_retries': 3}, deadline=1754589575.898223, dependencies=['task_phase_1_1'])",
+                "Task(id='task_phase_1_3', description='Identify constraints', priority=<TaskPriority.MEDIUM: 2>, parameters={'description': 'Identify constraints', 'real_time_context': {}, 'retry_count': 0, 'max_retries': 3}, deadline=1754589575.8982267, dependencies=['task_phase_1_2'])"
+              ],
+              "results": [
+                "ExecutionResult(task_id='task_phase_1_1', success=True, result={'status': 'completed', 'output': 'Generic task executed: Gather requirements', 'timestamp': 1754589125.89827}, execution_time=1.430511474609375e-06, error_message=None)",
+                "ExecutionResult(task_id='task_phase_1_2', success=True, result={'status': 'completed', 'output': 'Generic task executed: Assess environmental conditions', 'timestamp': 1754589125.8983011}, execution_time=1.430511474609375e-06, error_message=None)",
+                "ExecutionResult(task_id='task_phase_1_3', success=True, result={'status': 'completed', 'output': 'Generic task executed: Identify constraints', 'timestamp': 1754589125.8983245}, execution_time=1.1920928955078125e-06, error_message=None)"
+              ],
+              "summary": {
+                "total_tasks": 3,
+                "successful_tasks": 3,
+                "failed_tasks": 0,
+                "success_rate": 1.0,
+                "total_execution_time": 4.0531158447265625e-06,
+                "average_execution_time": 1.3510386149088542e-06
+              }
+            },
+            "processing_time": 0.0005726814270019531,
+            "performance": {
+              "signals_processed": 1,
+              "average_processing_time": 0.00023674964904785156,
+              "success_rate": 1.0,
+              "resource_usage": 0.0
+            }
+          }
+        ],
+        "processing_summary": {
+          "status": "completed",
+          "agents_processed": 1,
+          "successful_agents": 1,
+          "success_rate": 1.0,
+          "average_processing_time": 0.0005726814270019531,
+          "specializations_involved": [
+            "GeneralProcessor"
+          ]
+        }
+      },
+      "processing_time": 0.03188753128051758,
+      "success": true
+    }
+  ],
+  "learning_history": [],
+  "network_state": {
+    "agent_count": 9,
+    "agent_statuses": {
+      "coordinator": {
+        "id": "coordinator",
+        "specialization": "GeneralProcessor",
+        "threshold": 0.5,
+        "is_active": false,
+        "activation_count": 1,
+        "last_activation_time": 1754589125.898108,
+        "input_buffer_size": 3,
+        "output_buffer_size": 0,
+        "connection_count": 6,
+        "performance_metrics": {
+          "signals_processed": 1,
+          "average_processing_time": 0.00023674964904785156,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      },
+      "monitor": {
+        "id": "monitor",
+        "specialization": "DataAnalyzer",
+        "threshold": 0.8,
+        "is_active": false,
+        "activation_count": 0,
+        "last_activation_time": 0.0,
+        "input_buffer_size": 1,
+        "output_buffer_size": 0,
+        "connection_count": 1,
+        "performance_metrics": {
+          "signals_processed": 0,
+          "average_processing_time": 0.0,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      },
+      "executor": {
+        "id": "executor",
+        "specialization": "GeneralProcessor",
+        "threshold": 0.5,
+        "is_active": false,
+        "activation_count": 1,
+        "last_activation_time": 1754589125.8983996,
+        "input_buffer_size": 3,
+        "output_buffer_size": 0,
+        "connection_count": 1,
+        "performance_metrics": {
+          "signals_processed": 1,
+          "average_processing_time": 0.00028228759765625,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      },
+      "learner": {
+        "id": "learner",
+        "specialization": "DataAnalyzer",
+        "threshold": 0.8,
+        "is_active": false,
+        "activation_count": 0,
+        "last_activation_time": 0.0,
+        "input_buffer_size": 0,
+        "output_buffer_size": 0,
+        "connection_count": 1,
+        "performance_metrics": {
+          "signals_processed": 0,
+          "average_processing_time": 0.0,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      },
+      "optimizer": {
+        "id": "optimizer",
+        "specialization": "DataAnalyzer",
+        "threshold": 0.8,
+        "is_active": false,
+        "activation_count": 0,
+        "last_activation_time": 0.0,
+        "input_buffer_size": 1,
+        "output_buffer_size": 0,
+        "connection_count": 1,
+        "performance_metrics": {
+          "signals_processed": 0,
+          "average_processing_time": 0.0,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      },
+      "python_fixer": {
+        "id": "python_fixer",
+        "specialization": "PythonSyntaxFixer",
+        "threshold": 0.6,
+        "is_active": false,
+        "activation_count": 1,
+        "last_activation_time": 1754589125.8986857,
+        "input_buffer_size": 1,
+        "output_buffer_size": 0,
+        "connection_count": 2,
+        "performance_metrics": {
+          "signals_processed": 1,
+          "average_processing_time": 0.0002694129943847656,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      },
+      "sql_crafter": {
+        "id": "sql_crafter",
+        "specialization": "SQLQueryCrafter",
+        "threshold": 0.7,
+        "is_active": false,
+        "activation_count": 0,
+        "last_activation_time": 0.0,
+        "input_buffer_size": 1,
+        "output_buffer_size": 0,
+        "connection_count": 2,
+        "performance_metrics": {
+          "signals_processed": 0,
+          "average_processing_time": 0.0,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      },
+      "creative_writer": {
+        "id": "creative_writer",
+        "specialization": "CreativeWriter",
+        "threshold": 0.4,
+        "is_active": false,
+        "activation_count": 1,
+        "last_activation_time": 1754589125.8989599,
+        "input_buffer_size": 1,
+        "output_buffer_size": 0,
+        "connection_count": 2,
+        "performance_metrics": {
+          "signals_processed": 1,
+          "average_processing_time": 0.0002872943878173828,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      },
+      "data_analyzer": {
+        "id": "data_analyzer",
+        "specialization": "DataAnalyzer",
+        "threshold": 0.8,
+        "is_active": false,
+        "activation_count": 0,
+        "last_activation_time": 0.0,
+        "input_buffer_size": 1,
+        "output_buffer_size": 0,
+        "connection_count": 3,
+        "performance_metrics": {
+          "signals_processed": 0,
+          "average_processing_time": 0.0,
+          "success_rate": 1.0,
+          "resource_usage": 0.0
+        }
+      }
+    },
+    "network_metrics": {
+      "total_signals": 1,
+      "average_signal_strength": 1.0,
+      "network_activity": 4,
+      "agent_activity": {
+        "coordinator": 1
+      }
+    },
+    "total_signals_processed": 1
+  }
+}
